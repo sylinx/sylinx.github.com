@@ -11,11 +11,15 @@ desc: Sylinx
 
 custom:
     category:
-        default: 文章
+        default: Uncategorized
+	coding:  coding
         another: 其它
     categories:
       - name:  default
-        title: 文章
+        title: Uncategorized
+
+      - name:  coding
+        title: coding
 
       - name:  another
         title: 其它
