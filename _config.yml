@@ -12,7 +12,7 @@ desc: Sylinx
 custom:
     category:
         default: Uncategorized
-	coding:  coding
+	coding: coding
         another: 其它
     categories:
       - name:  default
