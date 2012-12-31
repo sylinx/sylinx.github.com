@@ -23,7 +23,7 @@
 </div>
 
 <aside>
-	<h2><a href="/">{{ site.name }}</a><a href="/feed.xml" class="feed-link" title="Subscribe"><img src="http://blog.rexsong.com/wp-content/themes/rexsong/icon_feed.gif" alt="RSS feed" /></a></h2>
+	<h2><a href="/">{{ site.name }}</a><a href="/feed.xml" class="feed-link" title="Subscribe"><img src="/assets/images/icon_feed.gif" alt="RSS feed" /></a></h2>
 	
 	<nav class="block">
 		<ul>
@@ -56,7 +56,7 @@
 		<a href="https://github.com/{{ site.meta.author.github }}"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
 	</div>
 	{% endif %}
-	
+	<!--
 	<div class="block block-thank">
 		<h3>Powered by</h3>
 		<p>
@@ -70,10 +70,11 @@
 			<a href="https://github.com/mytharcher/SimpleGray" target="_blank">SimpleGray</a>
 		</p>
 	</div>
+	-->
 </aside>
 
-<script src="http://elfjs.googlecode.com/files/elf-0.4.1-min.js"></script>
-<script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
+<script src="/assets/js/elf-0.4.1-min.js"></script>
+<script src="/assets/js/highlight.min.js"></script>
 
 <script src="/assets/js/site.js"></script>
 {% for script in page.scripts %}<script src="{{ script }}"></script>
