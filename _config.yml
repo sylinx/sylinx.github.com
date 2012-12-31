@@ -12,17 +12,15 @@ desc: Sylinx
 custom:
     category:
         default: Uncategorized
-	coding: coding
-        another: 其它
+        another: Other
     categories:
       - name:  default
         title: Uncategorized
 
-      - name:  coding
-        title: coding
 
       - name:  another
-        title: 其它
+        title: Other
+
 
 meta:
     author:

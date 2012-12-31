@@ -1,8 +1,0 @@
----
-layout: list
-title:  coding category
----
-
-{% assign list = site.categories.coding %}
-{% assign preview = true %}
-{% include list.tpl %}
