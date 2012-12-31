@@ -15,7 +15,7 @@ custom:
         another: 其它
     categories:
       - name:  default
-        title: 默认
+        title: 文章
 
       - name:  another
         title: 其它
