@@ -5,8 +5,8 @@ category: default
 ---
 1. lucene spatial3.2 版本支持geohash 和 Cartesian tier boxes位置索引
 
-    geohash 见 http://en.wikipedia.org/wiki/Geohash  
-    Cartesian tier boxes见 http://www.nsshutdown.com/projects/lucene/whitepaper/locallucene_v2.html
+    geohash 见 [http://en.wikipedia.org/wiki/Geohash](http://en.wikipedia.org/wiki/Geohash)   
+    Cartesian tier boxes见 [http://www.nsshutdown.com/projects/lucene/whitepaper/locallucene_v2.html](http://www.nsshutdown.com/projects/lucene/whitepaper/locallucene_v2.html)  
     
     目前我们索引采用 Cartesian tier boxes 
 
@@ -25,8 +25,9 @@ category: default
     330.00386  
     这时B点才会被检索出来，这个应该是box投影算法在大于10公里出现问题
 
-    测试代码如下：  
+    测试代码如下:  
     
+    <pre>
         IProjector projector = new SinusoidalProjector();
         Analyzer analyzer = new StandardAnalyzer(Version.LUCENE_32);
         CartesianTierPlotter ctp = new CartesianTierPlotter(0, projector, CartesianTierPlotter.DEFALT_FIELD_PREFIX);
@@ -45,7 +46,7 @@ category: default
         for (Double area : shape.getArea()) {
             System.out.println(area);
         }
-
+    </pre>
 
 
 4.  开始调试看能否扩大检索范围，发现 CartesianPolyFilterBuilder 中getShapeLoop似乎是个bug,如下图
