@@ -25,6 +25,7 @@ category: default
     330.00386  
     这时B点才会被检索出来，这个应该是box投影算法在大于10公里出现问题,测试代码如下:
 
+    
         IProjector projector = new SinusoidalProjector();
         Analyzer analyzer = new StandardAnalyzer(Version.LUCENE_32);
         CartesianTierPlotter ctp = new CartesianTierPlotter(0, projector, CartesianTierPlotter.DEFALT_FIELD_PREFIX);
@@ -52,5 +53,8 @@ category: default
      即使在上面打上patch 大于10公里的检索仍然不是很准确
 
 5. 从3.4 一直升级到3.61 ，上面问题仍然没有解决。 最后升级到4.0，因为API变动比较大，改动比较多，最终修复该问题
+
+在网上也搜索了相关的资料，Cartesian tier boxes 在大范围检索的时候会出现较多的点检索不到，且也不太精确。可以采用spatial4j+JTS实现精确检索
+
 
 {% include references.md %}
