@@ -23,11 +23,8 @@ category: default
     330.00384  
     330.00385  
     330.00386  
-    这时B点才会被检索出来，这个应该是box投影算法在大于10公里出现问题
+    这时B点才会被检索出来，这个应该是box投影算法在大于10公里出现问题,测试代码如下:
 
-    测试代码如下:  
-    
-    <pre>
         IProjector projector = new SinusoidalProjector();
         Analyzer analyzer = new StandardAnalyzer(Version.LUCENE_32);
         CartesianTierPlotter ctp = new CartesianTierPlotter(0, projector, CartesianTierPlotter.DEFALT_FIELD_PREFIX);
@@ -46,7 +43,7 @@ category: default
         for (Double area : shape.getArea()) {
             System.out.println(area);
         }
-    </pre>
+
 
 
 4.  开始调试看能否扩大检索范围，发现 CartesianPolyFilterBuilder 中getShapeLoop似乎是个bug,如下图
