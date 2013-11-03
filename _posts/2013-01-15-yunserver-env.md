@@ -90,6 +90,9 @@ nginx80端口非ROOT用户授权
 
 <h3>解决TIME_WAIT过多问题</h3>
 
+nginx代理使用短链接的方式和后端jetty交互，会使TIME_WAIT变得比较多,解决方法如下：
+
+
 编辑/etc/sysctl.conf文件，加入以下内容：
 >net.ipv4.tcp_syncookies = 1  
 net.ipv4.tcp\_tw\_reuse = 1  
