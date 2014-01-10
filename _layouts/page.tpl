@@ -2,6 +2,8 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="format-detection" content="telephone=no">
 <meta name="author" content="{{ site.meta.author.name }}" />
 <meta name="keywords" content="{{ page.tags | join: ',' }}" />
 <title>{{ site.name }}{% if page.title %} / {{ page.title }}{% endif %}</title>
