@@ -97,7 +97,7 @@ h3{font-size:1.0em}
 .main{padding: 1em 1em;}
 #disqus_thread{display:none}
 aside h2{margin:0 0; }
-aside .block-fork{display:none}
+aside .block-fork{display:none !important}
 aside{padding: 0.5em 0.5em;font-size: 70%;}
 aside nav li::before{margin: 0 0;line-height: 20px}
 }
