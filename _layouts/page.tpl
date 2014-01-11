@@ -48,7 +48,7 @@
 		<p>dedicated to programming and technology.</p>
 	</div>
 	
-	<div class="block block-license">
+	<div class="block block-link">
 		<h3>友情链接</h3>
 		<p><a rel="fiveui" href="http://www.fiveui.com/" target="_blank">小武</a></p>
 	</div>

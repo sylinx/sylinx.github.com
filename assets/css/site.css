@@ -101,6 +101,6 @@ aside .block-fork{display:none !important;}
 aside{padding: 0.5em 0.5em;font-size: 70%;}
 aside nav li::before{margin: 0 0;line-height: 20px;content: ""; }
 aside .feed-link{display: none;}
-aside .block-about p,.block-license,.block-search{display:none;}
+aside .block-about p,.block-thank,.block-license,.block-search{display:none;}
 
 }
