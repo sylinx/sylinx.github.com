@@ -15,6 +15,7 @@ custom:
         topic: 专题
         exploer: 爱探索
         tweet: 吐槽围观
+        business: 创业
     categories:
       - name:  dev
         title: 开发经验
@@ -25,9 +26,11 @@ custom:
       - name:  exploer
         title: 爱探索
 
+      - name:  business
+        title: 创业
+
       - name:  tweet
         title: 吐槽围观
-
 
 meta:
     author:
