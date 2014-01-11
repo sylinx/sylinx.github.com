@@ -10,7 +10,7 @@ HttpClient优化
 
 线程池参数
 
-```
+```java
 private static int MAX_CONNECTIONS = 200; 
 
 private static int MAX_CONNECTIONS_PER_ROUTE = 30;
@@ -36,15 +36,13 @@ private static int MAX_CONNECTIONS_PER_ROUTE = 30;
 多线程 10个线程每个线程执行50次对比（单位s）
 --------------
 
-<table border=0 cellpadding=0 cellspacing=0 width=236 style='border-collapse:
- collapse;table-layout:fixed;width:236pt'>
- <col width=118 span=2 style='width:118pt'>
- <tr height=13 style='height:13.0pt'>
-  <td height=13 class=xl66 width=118 style='height:13.0pt;width:118pt'>未池化</td>
-  <td class=xl66 width=118 style='width:118pt'>池化</td>
+<table>
+ <tr >
+  <td >未池化</td>
+  <td >池化</td>
  </tr>
- <tr height=132 style='height:132.0pt'>
-  <td height=132 class=xl65 width=118 style='height:132.0pt;width:118pt'>1.549
+ <tr >
+  <td >1.549
   seconds<br>
   1.562 seconds<br>
   1.563 seconds<br>
@@ -56,7 +54,7 @@ private static int MAX_CONNECTIONS_PER_ROUTE = 30;
   6.089 seconds<br>
   8.622 seconds<br>
   total 29.027 second</td>
-  <td class=xl65 width=118 style='width:118pt'>0.864 seconds <br>
+  <td >0.864 seconds <br>
   0.864 seconds <br>
   0.874 seconds <br>
   0.874 seconds <br>
@@ -68,8 +66,8 @@ private static int MAX_CONNECTIONS_PER_ROUTE = 30;
   1.051 seconds <br>
   total 9.237 seconds</td>
  </tr>
- <tr height=132 style='height:132.0pt'>
-  <td height=132 class=xl65 width=118 style='height:132.0pt;width:118pt'>1.414
+ <tr>
+  <td>1.414
   seconds <br>
   1.427 seconds <br>
   1.427 seconds <br>
@@ -81,7 +79,7 @@ private static int MAX_CONNECTIONS_PER_ROUTE = 30;
   5.891 seconds <br>
   5.891 seconds <br>
   total 30.946 seconds</td>
-  <td class=xl65 width=118 style='width:118pt'>0.884 seconds <br>
+  <td>0.884 seconds <br>
   0.889 seconds <br>
   0.891 seconds <br>
   0.895 seconds <br>
@@ -91,11 +89,10 @@ private static int MAX_CONNECTIONS_PER_ROUTE = 30;
   0.906 seconds <br>
   1.108 seconds <br>
   1.107 seconds <br>
-  total 9.383 seconds<span
-  style="mso-spacerun:yes">&nbsp;</span></td>
+  total 9.383 seconds</td>
  </tr>
- <tr height=132 style='height:132.0pt'>
-  <td height=132 class=xl65 width=118 style='height:132.0pt;width:118pt'>1.308
+ <tr >
+  <td>1.308
   seconds <br>
   1.315 seconds <br>
   1.326 seconds <br>
@@ -107,7 +104,7 @@ private static int MAX_CONNECTIONS_PER_ROUTE = 30;
   3.413 seconds <br>
   6.485 seconds <br>
   total 22.318 seconds</td>
-  <td class=xl65 width=118 style='width:118pt'>0.914 seconds <br>
+  <td>0.914 seconds <br>
   0.920 seconds <br>
   0.921 seconds <br>
   0.921 seconds <br>
@@ -119,8 +116,8 @@ private static int MAX_CONNECTIONS_PER_ROUTE = 30;
   0.969 seconds <br>
   total 9.424 seconds</td>
  </tr>
- <tr height=132 style='height:132.0pt'>
-  <td height=132 class=xl65 width=118 style='height:132.0pt;width:118pt'>1.382
+ <tr >
+  <td>1.382
   seconds <br>
   1.395 seconds <br>
   1.395 seconds <br>
@@ -132,7 +129,7 @@ private static int MAX_CONNECTIONS_PER_ROUTE = 30;
   7.335 seconds <br>
   7.335 seconds <br>
   total 30.060 seconds</td>
-  <td class=xl65 width=118 style='width:118pt'>0.873 seconds <br>
+  <td>0.873 seconds <br>
   0.881 seconds <br>
   0.882 seconds <br>
   0.883 seconds <br>
@@ -142,11 +139,10 @@ private static int MAX_CONNECTIONS_PER_ROUTE = 30;
   0.889 seconds <br>
   0.894 seconds <br>
   1.280 seconds <br>
-  total 9.244 seconds<span
-  style="mso-spacerun:yes">&nbsp;</span></td>
+  total 9.244 seconds</td>
  </tr>
- <tr height=132 style='height:132.0pt'>
-  <td height=132 class=xl65 width=118 style='height:132.0pt;width:118pt'>1.669
+ <tr>
+  <td>1.669
   seconds <br>
   1.679 seconds <br>
   1.680 seconds <br>
@@ -158,7 +154,7 @@ private static int MAX_CONNECTIONS_PER_ROUTE = 30;
   6.112 seconds <br>
   6.113 seconds <br>
   total 29.989 seconds</td>
-  <td class=xl65 width=118 style='width:118pt'>0.887 seconds <br>
+  <td>0.887 seconds <br>
   0.897 seconds <br>
   0.898 seconds <br>
   0.907 seconds <br>
@@ -176,16 +172,14 @@ private static int MAX_CONNECTIONS_PER_ROUTE = 30;
 多线程 50个线程每个线程执行50次对比（单位s）
 --------------
 
-<table border=0 cellpadding=0 cellspacing=0 width=226 style='border-collapse:
- collapse;table-layout:fixed;width:226pt'>
- <col width=108 style='mso-width-source:userset;mso-width-alt:4608;width:108pt'>
- <col width=118 style='mso-width-source:userset;mso-width-alt:5034;width:118pt'>
- <tr height=13 style='height:13.0pt'>
-  <td height=13 class=xl66 width=108 style='height:13.0pt;width:108pt'>未池化</td>
-  <td class=xl66 width=118 style='width:118pt'>池化</td>
+<table >
+
+ <tr >
+  <td >未池化</td>
+  <td>池化</td>
  </tr>
- <tr height=409 style='height:409.0pt'>
-  <td height=409 class=xl65 width=108 style='height:409.0pt;width:108pt'>1.237
+ <tr >
+  <td>1.237
   seconds <br>
   1.257 seconds <br>
   1.264 seconds <br>
@@ -241,7 +235,7 @@ private static int MAX_CONNECTIONS_PER_ROUTE = 30;
   <br>
   11.221 seconds <br>
   total 229.829 seconds</td>
-  <td class=xl65 width=118 style='width:118pt'>1.262 seconds <br>
+  <td>1.262 seconds <br>
   1.276 seconds <br>
   1.277 seconds <br>
   1.286 seconds <br>
@@ -297,8 +291,8 @@ private static int MAX_CONNECTIONS_PER_ROUTE = 30;
   1.808 seconds <br>
   total 68.765 seconds</td>
  </tr>
- <tr height=409 style='height:409.0pt'>
-  <td height=409 class=xl65 width=108 style='height:409.0pt;width:108pt'>1.250
+ <tr>
+  <td>1.250
   seconds <br>
   1.269 seconds <br>
   1.267 seconds <br>
@@ -354,8 +348,7 @@ private static int MAX_CONNECTIONS_PER_ROUTE = 30;
   <br>
   9.227 seconds <br>
   total 258.807 seconds</td>
-  <td class=xl65 width=118 style='width:118pt'><span
-  style="mso-spacerun:yes">&nbsp;</span>1.412 seconds <br>
+  <td>1.412 seconds <br>
   1.440 seconds <br>
   1.444 seconds <br>
   1.449 seconds <br>
