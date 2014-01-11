@@ -1,10 +1,9 @@
 ---
 layout: post
-title: httpclient优化
+title: HttpClient优化
 category: default
 ---
-HttpClient优化
--------------
+
 
 社交圈跟QB接口采用的是http方式，目前使用httpclient4.0发起请求，未采用池化管理，每次请求重新new 个httpclient。特地做了如下测试验证下两者差别，发现单线程环境下采用池化效率大概是未采用池化的两倍，多线程环境大概是3倍多，随着并发量增多，效率应该更明显
 
