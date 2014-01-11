@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 阿里云主机使用笔记-php环境搭建
-category: default
+title: 阿里云主机使用笔记-php环境搭建(3)
+category: topic
 ---
 <h3>安装依赖包</h3>
     yum -y install gcc automake autoconf libtool make

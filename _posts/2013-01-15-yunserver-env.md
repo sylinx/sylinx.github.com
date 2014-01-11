@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 阿里云主机使用笔记-环境搭建
-category: default
+title: 阿里云主机使用笔记-环境搭建(1)
+category: topic
 ---
 申请开通下云主机，我这里操作系统选择的是redhat5.4 64位。我们系统都是用java编写，所以web服务器和应用容器采用 nginx+jetty。 常用软件均安装在/usr/soft/install下,链接到/usr/soft/,这样以后更新install目录下的软件版本，只要更新下链接就可。
 

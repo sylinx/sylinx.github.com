@@ -6,26 +6,33 @@ exclude:
   - README.md
 
 name: Sylinx
-host: http://sylinx.github.com/
+host: sylinx.github.com
 desc: Sylinx
 
 custom:
     category:
-        default: Uncategorized
-        another: Other
+        dev: 开发经验
+        topic: 专题
+        exploer: 爱探索
+        tweet: 吐槽围观
     categories:
-      - name:  default
-        title: Uncategorized
+      - name:  dev
+        title: 开发经验
 
+      - name:  topic
+        title: 专题
 
-      - name:  another
-        title: Other
+      - name:  exploer
+        title: 爱探索
+
+      - name:  tweet
+        title: 吐槽围观
 
 
 meta:
     author:
         name: Sylinx
-        email: yanqg@homewaimai.com
+        email: sylinxsoft@gmail.com
         disqus: sylinx              # Disqus缩略标识
         gcse: 006133068628824591854:vbkpwqtvl3e     # Google自定义搜索标识ID
         github: sylinx                # GitHub账号

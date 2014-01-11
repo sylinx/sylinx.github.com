@@ -1,7 +1,7 @@
 ---
 layout: post
 title: lucene Cartesian tier boxes地理位置检索问题
-category: default
+category: dev
 ---
 1. lucene spatial3.2 版本支持geohash 和 Cartesian tier boxes位置索引
 

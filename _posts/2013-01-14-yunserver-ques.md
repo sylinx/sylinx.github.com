@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 阿里云主机使用笔记-问题记录
-category: default
+title: 阿里云主机使用笔记-问题记录(2)
+category: topic
 ---
 
 * 写磁盘导致load飙得死高
