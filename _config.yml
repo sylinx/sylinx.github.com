@@ -13,7 +13,7 @@ custom:
     category:
         dev: 开发经验
         topic: 专题
-        exploer: 爱探索
+        exp: 爱探索
         tweet: 吐槽围观
         business: 创业
     categories:
@@ -23,7 +23,7 @@ custom:
       - name:  topic
         title: 专题
 
-      - name:  exploer
+      - name:  exp
         title: 爱探索
 
       - name:  business
