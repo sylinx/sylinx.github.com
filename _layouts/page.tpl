@@ -45,12 +45,13 @@
 			{% if site.meta.author.gravatar %}<img src="{{ site.meta.gravatar}}{{ site.meta.author.gravatar }}?s=48" />{% endif %}
 			<figcaption><strong>{{ site.meta.author.name }}</strong></figcaption>
 		</figure>
-		<p>dedicated to programming and technology.</p>
+		<p>热爱技术工作,喜欢专研编程中遇到的各种问题,轻微代码洁癖,典型技术控。多年电信行业和互联网行业经验,擅长技术架构设计</p>
 	</div>
 	
 	<div class="block block-link">
 		<h3>友情链接</h3>
 		<p><a rel="fiveui" href="http://www.fiveui.com/" target="_blank">小武</a></p>
+		<p><a rel="sylinx" href="http://sylinx.iteye.com/" target="_blank">javaeye</a></p>
 	</div>
 	
 	<div class="block block-license">
