@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: 日常开发宝典
 category: dev
